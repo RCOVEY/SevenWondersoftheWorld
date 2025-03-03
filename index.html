@@ -6,54 +6,117 @@
     <title>3D Landmarks</title>
     <style>
         body {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            justify-items: center;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
             padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            grid-column: 1 / -1;
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            width: 100%;
+        }
+        .landmark {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .landmark:hover {
+            transform: scale(1.05);
         }
         .sketchfab-embed-wrapper {
-            width: 600px; 
+            width: 100%; 
             height: 400px;
-            margin-bottom: 20px;
             display: flex;
             justify-content: center;
         }
         iframe {
             width: 100%;
             height: 100%;
+            border-radius: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Explore 3D Landmarks</h1>
+    </header>
 
-    <div class="sketchfab-embed-wrapper"> 
-        <iframe title="Christ the Redeemer" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/d76206f318d14425ad12c18bf0d02ccc/embed?autoplay=1&camera=auto"></iframe> 
+    <div class="landmark"> 
+        <h2>Christ the Redeemer</h2>
+        <div class="sketchfab-embed-wrapper">
+            <iframe src="https://sketchfab.com/models/d76206f318d14425ad12c18bf0d02ccc/embed?autoplay=1&camera=auto" allowfullscreen></iframe>
+        </div>
     </div>
 
-    <div class="sketchfab-embed-wrapper"> 
-        <iframe title="Machu Picchu" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/36ed2a613f924c1b9051d87a27df5491/embed?autoplay=1&camera=auto"></iframe> 
+    <div class="landmark"> 
+        <h2>Machu Picchu</h2>
+        <div class="sketchfab-embed-wrapper">
+            <iframe src="https://sketchfab.com/models/36ed2a613f924c1b9051d87a27df5491/embed?autoplay=1&camera=auto" allowfullscreen></iframe>
+        </div>
     </div>
 
-    <div class="sketchfab-embed-wrapper"> 
-        <iframe title="Taj Mahal" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/b89c6ceb0579437eb531a71f6f463eea/embed?autoplay=1&camera=auto"></iframe> 
+    <div class="landmark"> 
+        <h2>Taj Mahal</h2>
+        <div class="sketchfab-embed-wrapper">
+            <iframe src="https://sketchfab.com/models/b89c6ceb0579437eb531a71f6f463eea/embed?autoplay=1&camera=auto" allowfullscreen></iframe>
+        </div>
     </div>
 
-    <div class="sketchfab-embed-wrapper"> 
-        <iframe title="Great Wall of China" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/32f1443d65794c1a84742eae38c6ea31/embed?autoplay=1&camera=auto"></iframe> 
+    <div class="landmark"> 
+        <h2>Great Wall of China</h2>
+        <div class="sketchfab-embed-wrapper">
+            <iframe src="https://sketchfab.com/models/32f1443d65794c1a84742eae38c6ea31/embed?autoplay=1&camera=auto" allowfullscreen></iframe>
+        </div>
     </div>
 
-    <div class="sketchfab-embed-wrapper"> 
-        <iframe title="Colosseum" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/03c8b102adf04e10babac28938d53e80/embed?autoplay=1&camera=auto"></iframe> 
+    <div class="landmark"> 
+        <h2>Colosseum</h2>
+        <div class="sketchfab-embed-wrapper">
+            <iframe src="https://sketchfab.com/models/03c8b102adf04e10babac28938d53e80/embed?autoplay=1&camera=auto" allowfullscreen></iframe>
+        </div>
     </div>
 
-    <div class="sketchfab-embed-wrapper"> 
-        <iframe title="Petra" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/3c1cbd042d4544cfb92d163c8e0395bf/embed?autoplay=1&camera=auto"></iframe> 
+    <div class="landmark"> 
+        <h2>Petra</h2>
+        <div class="sketchfab-embed-wrapper">
+            <iframe src="https://sketchfab.com/models/3c1cbd042d4544cfb92d163c8e0395bf/embed?autoplay=1&camera=auto" allowfullscreen></iframe>
+        </div>
     </div>
 
-     <div class="sketchfab-embed-wrapper"> 
-        <iframe title="Chichén Itzá" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/78a5c05624ee4830a32067f6b0ea37f7/embed?autoplay=1&camera=auto"></iframe> 
+    <div class="landmark"> 
+        <h2>Chichén Itzá</h2>
+        <div class="sketchfab-embed-wrapper">
+            <iframe src="https://sketchfab.com/models/78a5c05624ee4830a32067f6b0ea37f7/embed?autoplay=1&camera=auto" allowfullscreen></iframe>
+        </div>
     </div>
 
+    <footer>
+        <p>Powered by Sketchfab | Created for Exploration</p>
+    </footer>
 </body>
 </html>
